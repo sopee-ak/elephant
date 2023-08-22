@@ -1,0 +1,295 @@
+@font-face {
+    font-family: HelvethaicaMed;
+    src: url('../font/DB-Helvethaica-X-Med.ttf');
+}
+
+@font-face {
+    font-family: HelvethaicaCond;
+    src: url('../font/DB-Helvethaica-X-Bd-Cond-It.ttf');
+}
+
+@font-face {
+    font-family: HelvethaicaLight;
+    src: url('../font/db_helvethaica_x_light.ttf');
+}
+
+
+body {
+    background-color: black;
+}
+
+p {
+    font-family: HelvethaicaLight;
+    color: #ffffff;
+}
+
+li, a {
+    font-family: HelvethaicaMed;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+li span {
+    color: #D68234;
+    font-family: HelvethaicaCond;
+}
+
+li {
+    font-size: 20px;
+    list-style-type: "- ";
+    line-height: 26px;
+}
+
+.img-banner {
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.content-header {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    width: max-content;
+    margin: -40px auto 0;
+
+}
+
+.content-header p {
+    padding: 20px 45px;
+    background-color: black;
+  font-size: 26px;
+}
+
+.img-content img {
+    width: 275px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.img-content > div {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.img-content h1 {
+    color: #D68234;
+    font-size: 24px;
+    font-family: HelvethaicaCond;
+}
+
+.img-content p {
+    font-size: 20px;
+}
+
+.elephant-vertical {
+    align-self: center;
+    text-align: center;
+}
+
+.elephant-vertical img {
+    width: 356px;
+    margin-bottom: 20px;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.img-elephant {
+    max-width: 855px;
+    display: flex;
+    margin: 20px auto;
+}
+
+.map {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 25px;
+}
+
+.map img {
+    width: 450px;
+}
+
+.map h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: HelvethaicaMed;
+}
+
+.map h1 span {
+    color: #D68234;
+    font-size: 24px;
+}
+
+.map .content {
+    margin-top: 60px;
+}
+
+.img-footer {
+    position: relative;
+}
+
+.img-footer .box-link {
+    position: absolute;
+    color: #ffffff;
+    background-color: #D68234;
+    left: 35%;
+    top: 43%;
+    font-size: 30px;
+    padding: 5px 35px;
+    text-decoration: none;
+}
+
+.img-footer .icon-click {
+    position: absolute;
+    right: -11px;
+    top: 83%;
+    width: 45px;
+}
+
+.hidden-w1024 {
+    display: block;
+}
+
+.hidden-w767 {
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .hidden-w1024 {
+        display: none;
+    }
+
+    .content-header p {
+        font-size: 18px;
+    }
+
+    .img-elephant {
+        max-width: 600px;
+    }
+
+    .elephant-vertical img {
+        width: 180px;
+        margin-bottom: 40px ;
+    }
+
+    .content-header{
+        margin: -27px auto 0;
+    }
+
+    .img-content > div {
+        justify-content: center;
+    }
+
+    .map {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map .content {
+        margin-top: 40px;
+    }
+
+    .img-footer .box-link {
+        font-size: 24px;
+        top: 35%;
+        padding: 5px 25px;
+    }
+
+    .img-footer .icon-click {
+        right: -5px;
+        top: 90%;
+        width: 30px;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    .img-content p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hidden-w767 {
+        display: none;
+    }
+
+    .content-header {
+        width: 100%;
+    }
+
+    .content-header p {
+        margin: 15px 20px 0;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .img-elephant {
+        width:  80%;
+    }
+
+    .map img {
+        width: 80%;
+    }
+
+    .img-content > div {
+        flex-direction: column;
+        margin:  0 30px 10px ;
+    }
+
+    .img-content img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .map {
+        margin: 0 30px;
+    }
+
+    .map h1 {
+        font-size: 22px;
+    }
+
+    .map h1 span {
+        font-size: 22px;
+    }
+
+    .map img {
+        width: 100%;
+    }
+
+    .img-footer .box-link {
+        font-size: 15px;
+        top: 27%;
+        padding: 3px 17px;
+    }
+
+    .img-footer .icon-click {
+        width: 20px;
+    }
+
+    .img-content p {
+        font-size: 18px;
+    }
+
+    ol, ul {
+        padding-left: 0rem;
+    }
+}
